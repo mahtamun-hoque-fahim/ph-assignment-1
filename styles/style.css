@@ -173,7 +173,7 @@ body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-car
 }
 
 /*==========================================
-=========== why inspiration section ========
+=========== my inspiration section =========
 ============================================*/
 
 body>section.my-insp {
@@ -202,4 +202,69 @@ body>section.my-insp>div.my-insp-container>div.video-content {
 
 body>section.my-insp>div.my-insp-container>div.video-content>iframe {
     border-radius: 16px;
+}
+
+/*=========================================================
+======================= Target section =====================
+===========================================================*/
+
+/*=====================================
+========my current Target section =====
+=====================================*/
+
+/* body > section.target */
+
+/* body > section.target > div.target-containers  */
+body>section.target>div.target-container>div.cur-tar {
+    display: flex;
+    flex-direction: column;
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-header {
+    text-align: center;
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-header>p {
+    margin-top: 24px;
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin: auto auto;
+    width: 1140px;
+    margin-top: 48px;
+
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card {
+    width: 364px;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card>div.card-content>div.card-content-text>h3 {
+    margin-bottom: 24px;
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card>div.card-content>div.card-content-text>a {
+    text-decoration: none;
+    color: #0D1321;
+    margin-top: 24px;
+    border: .5px dashed red;
+}
+
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card1 {
+    background-color: rgba(255, 76, 30, 0.05);
+
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card2 {
+    background-color: rgba(0, 76, 232, 0.05);
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card3 {
+    background-color: rgba(255, 223, 0, 0.05)
 }
