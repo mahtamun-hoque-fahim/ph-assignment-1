@@ -5,10 +5,78 @@
     scroll-behavior: smooth;
 }
 
-/* ---গুগল করে পেলাম যে,
+/* --- গুগল করে পেলাম যে,
 আইডি দিয়ে পেজের একটা অংশকে আরেকটা অংশের সাথে জুড়ে দেয়া যায়,
 তখন নাকি এই স্ক্রল বিহেভিয়ার এটা দিলে সুন্দর করে টেনে নিয়ে যায়।
- পরে এটা কমেন্ট করে দিয়ে টেস্ট করে দেখি - ধুপ করে টান মেরে ফুটারে নিয়ে যাচ্ছে - সুন্দর্য নাই কিছু নাই। 
- তাই এইটা রেখে দিসি
+ পরে এটা কমেন্ট করে দিয়ে টেস্ট করে দেখি - ধুপ করে টান মেরে 
+ ফুটারে নিয়ে যাচ্ছে - সুন্দর্য নাই কিছু নাই। 
+ তাই scroll-behavior: smooth; এইটা রেখে দিসি
 ------ */
 
+/* Shared Styles */
+
+.btn {
+    font-family: Azeret Mono, monospace;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-outlined {
+    border: 1px solid #0D1321;
+    background-color: transparent;
+    color: #0D1321;
+    padding: 17px 24px;
+}
+
+.btn-fill {
+    border: none;
+    background-color: #0D1321;
+    color: #ffffff;
+    padding: 17px 24px;
+}
+
+body {
+    font-family: Azeret Mono, monospace;
+    background-color: #ffffff;
+}
+
+body>header {
+    color: #0D1321;
+}
+
+body>header>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 36px 90px;
+}
+
+body>header>nav h3 {
+    margin-right: 0px;
+}
+
+body>header>.hero-section {
+    background-image: url("../assets/Hero-bg.png");
+    padding: 25px 221px 45px 221px;
+}
+
+body>header>.hero-section .hero-container {
+    margin: auto auto;
+    text-align: center;
+    width: 998px;
+}
+
+body>header>.hero-section .hero-container .hero-content {
+    margin-top: 32px;
+}
+
+body>header>.hero-section .hero-container .hero-content .hero-title {
+    font-weight: 900;
+    margin: 20px;
+}
+
+body>header>.hero-section .hero-container .hero-content p {
+    margin: 20px;
+    font-weight: 200;
+
+}
