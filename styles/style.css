@@ -186,6 +186,7 @@ body>section.my-insp {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    color: #0D1321;
 }
 
 body>section.my-insp>div.my-insp-container {
@@ -195,6 +196,7 @@ body>section.my-insp>div.my-insp-container {
 body>section.my-insp>div.my-insp-container>div.my-insp-content p.insp-description {
     margin-top: 24px;
     font-size: 16px;
+    color: #0D1321;
 }
 
 body>section.my-insp>div.my-insp-container>div.video-content {
@@ -252,15 +254,31 @@ body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card 
     width: 364px;
     padding: 40px;
     border-radius: 16px;
+    color: #0D1321;
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card>div.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card>div.card-content>img {
+    height: 56px;
+    width: 56px;
 }
 
 body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card>div.card-content>div.card-content-text>h3 {
-    /* margin-top: 24px; */
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card>div.card-content>a {
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card>div.card-content>div.card-content-text>p {
     color: #0D1321;
-    margin-top: 24px;
+}
+
+body>section.target>div.target-container>div.cur-tar>div.cur-tar-cards div.card>div.card-content>a.learnmore {
+    color: #0D1321;
 }
 
 
@@ -334,11 +352,14 @@ section.support {
 section.support>div.support {
     background-color: rgba(0, 0, 0, 0.6);
     background-image: url("/assets/handshake.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-blend-mode: overlay;
     width: 1140px;
     height: 313px;
     padding: 64px 48px;
-    margin: auto auto;
+    margin: 180px auto;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -356,16 +377,35 @@ section.support>div.support>div.support-text h1 {
     font-size: 32px;
 }
 
-section.support>div.support>form.support-form>input.email {
-    border: none;
-    background-color: white;
-    border-radius: 8px;
-    padding: 19px 20px;
+section.support>div.support>form.support-form {
+    margin: 24px 23px;
 }
 
-section.support>div.support>form.support-form>input.submit {
+section.support>div.support>form.support-form>input.input-email {
+    border: none;
+    border-radius: 8px;
+    width: 548px;
+    padding: 19px 20px;
+    font-family: Azeret Mono, monospace;
+}
+
+section.support>div.support>form.support-form>input.input-submit {
     border: none;
     background-color: white;
     color: #0D1321;
+    padding: 19px 20px;
     border-radius: 8px;
+    font-family: Azeret Mono, monospace;
+    font-weight: 600;
+}
+
+/*=========================================================
+======================= footer section =====================
+===========================================================*/
+
+footer {
+    padding: 32px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
