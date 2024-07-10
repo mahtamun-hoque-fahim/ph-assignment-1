@@ -13,8 +13,9 @@
  তাই scroll-behavior: smooth; এইটা রেখে দিসি
 ------ */
 
-/* Shared Styles */
-
+/*===============================
+========== Common Style =========
+================================*/
 .btn {
     font-family: Azeret Mono, monospace;
     border-radius: 8px;
@@ -35,10 +36,22 @@
     padding: 17px 24px;
 }
 
+.b-radius-none {
+    border-radius: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
 body {
     font-family: Azeret Mono, monospace;
     background-color: #ffffff;
 }
+
+/*==============================
+========== hero section ========
+================================*/
 
 body>header {
     color: #0D1321;
@@ -78,5 +91,71 @@ body>header>.hero-section .hero-container .hero-content .hero-title {
 body>header>.hero-section .hero-container .hero-content p {
     margin: 20px;
     font-weight: 200;
+}
 
+/*======================================
+=========== why web dev section ========
+=======================================*/
+
+body>section.why-wdev {
+    color: #0D1321;
+}
+
+body>section.why-wdev div {
+    /* border: .5px dashed #333; */
+}
+
+body>section.why-wdev div.wdev-container {
+    margin: 74px auto;
+    width: 1140px;
+    background-color: #0d132108;
+    border-radius: 16px;
+    padding: 48px;
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container {
+    margin: 80px 97px;
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-intro {
+    margin: 0 auto 48px auto;
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-intro>h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-intro>p {
+    font-size: 16px;
+    margin-top: 26px;
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-containe div.card {
+    background-image: linear-gradient(to right, #ffffff, #ffffff00);
+    border-radius: 16px;
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card>div.card-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 48px;
+
+
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card>div.card-content>div.content-texts {
+    margin-left: 48px;
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card>div.card-content>div.content-texts>h4.header-title {
+    font-weight: 700;
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card>div.card-content>div.content-texts>button {
+    margin: 16px 0 32px 0;
+    width: 171px;
+    height: 47px;
+    padding: 12px 20px;
 }
