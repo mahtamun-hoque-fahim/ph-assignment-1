@@ -110,7 +110,7 @@ body>section.why-wdev div.wdev-container {
     width: 1140px;
     background-color: #0d132108;
     border-radius: 16px;
-    padding: 48px;
+    padding: 80px 97px;
 }
 
 body>section.why-wdev div.wdev-container div.wdev-content-container {
@@ -131,9 +131,19 @@ body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-int
     margin-top: 26px;
 }
 
-body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-containe div.card {
-    background-image: linear-gradient(to right, #ffffff, #ffffff00);
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card {
+    background: linear-gradient(to right, #ffffff90, #ffffff00);
     border-radius: 16px;
+}
+
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card-prime {
+    background: linear-gradient(to right, #ffffff00, #ffffff90);
 }
 
 body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card>div.card-content {
@@ -142,20 +152,54 @@ body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-car
     align-items: center;
     padding: 48px;
 
-
 }
 
 body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card>div.card-content>div.content-texts {
     margin-left: 48px;
 }
 
-body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card>div.card-content>div.content-texts>h4.header-title {
+body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card>div.card-content>div.content-texts>h4.text-header {
     font-weight: 700;
+    color: rgba(13, 19, 33, 0.7);
+    font-size: 24px;
+    margin-bottom: 16px;
 }
 
 body>section.why-wdev div.wdev-container div.wdev-content-container div.wdev-cards-container div.card>div.card-content>div.content-texts>button {
-    margin: 16px 0 32px 0;
+    margin: 32px 0 32px 0;
     width: 171px;
     height: 47px;
     padding: 12px 20px;
+}
+
+/*==========================================
+=========== why inspiration section ========
+============================================*/
+
+body>section.my-insp {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+body>section.my-insp>div.my-insp-container {
+    margin: auto auto;
+}
+
+body>section.my-insp>div.my-insp-container>div.my-insp-content p.insp-description {
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+body>section.my-insp>div.my-insp-container>div.video-content {
+    padding: 32px;
+    border: 1px solid rgba(13, 19, 33, 0.2);
+    border-radius: 16px;
+    width: max-content;
+    margin: 100px auto;
+}
+
+body>section.my-insp>div.my-insp-container>div.video-content>iframe {
+    border-radius: 16px;
 }
